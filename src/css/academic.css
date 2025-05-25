@@ -130,11 +130,37 @@
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     animation: pulse 1.5s infinite;
 }
-  
-  @keyframes pulse {
-    0% {box-shadow: 0 0 0 0 rgba(79, 192, 184, 0.2);  transform: scale(1);}
-    25% {box-shadow: 0 0 0 3px rgba(79, 192, 184, 0.4); transform: scale(1.03);}
-    50% {box-shadow: 0 0 0 6px rgba(79, 192, 184, 0.1); transform: scale(1.05);}
-    75% {box-shadow: 0 0 0 4px rgba(79, 192, 184, 0); transform: scale(1.03);}
-    100% {box-shadow: 0 0 0 0 rgba(79, 192, 184, 0); transform: scale(1);}
-  }
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    .academic-block {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .academic-block > div:first-child {
+        width: 100%;
+    }
+
+    .academic-img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+
+    .academic-content {
+        width: 100%;
+    }
+
+    .academic-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .academic-header-toolbox {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

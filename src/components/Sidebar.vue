@@ -38,18 +38,18 @@ const News = [
 
 
 <template>
-  <aside class="sidebar">
+  <div class="sidebar">
     <!-- Profile Card -->
-    <div class="profile-section">
+    <div class="sidebar-card">
       <img src="@/assets/profile/profile_life.jpg" alt="Profile Photo">
       <h3 style="margin: 0 0 1rem 0; color: #2c3e50; font-size: 1.5rem;">Minrui Xu</h3>
-      <div>
-        <FontAwesomeIcon :icon="faUniversity" />
-        <p style="margin: 0; font-size: 1.2rem;">HKUST, Hong Kong</p>
+      <div class="sidebar-block">
+        <FontAwesomeIcon :icon="faUniversity" class="animation-jump" />
+        <p style="margin: 0;">HKUST, Hong Kong</p>
       </div>
-      <div>
-        <FontAwesomeIcon :icon="faEnvelope" />
-        <p style="margin: 0; font-size: 1.2rem;">mxubh@connect.ust.hk</p>
+      <div class="sidebar-block">
+        <FontAwesomeIcon :icon="faEnvelope" class="animation-jump" />
+        <p style="margin: 0;">mxubh@connect.ust.hk</p>
       </div>
     </div>
 
@@ -73,103 +73,77 @@ const News = [
     </div>
 
     <!-- News -->
-    <div class="sidebar-card news-section">
+    <div class="sidebar-card scrollbar">
       <h3>News
         <FontAwesomeIcon :icon="faRankingStar" style="color: #4fc08d"/>
       </h3>
-      <div v-for="item in News" :key="item.date" class="news-item">
+      <div v-for="item in News" :key="item.date" class="sidebar-block">
         <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
         <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
       </div>
     </div>
-  </aside>
+  </div>
 </template>
 
 
 <style scoped>
-/* Basic */
 .sidebar {
   width: 35%;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
   overflow-y: auto;
   height: 92vh;
-  box-sizing: border-box;
 }
 
 .sidebar-card {
   background: white;
   border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-/* Profile Card */
-.profile-section {
+  padding: 0.5rem;
   text-align: center;
-  padding: 1rem;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   position: relative;
 }
 
-.profile-section img {
+.sidebar-card img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4fc08d;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
-  position: relative;
 }
 
-.profile-section img::after {
-  content: "Jeju Island, 2025";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 8px 12px;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.profile-section img:hover::after {
-  opacity: 1;
-}
-
-.profile-section img:hover {
-  transform: scale(1.2);
-}
-
-.profile-section > div {
+.sidebar-block {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  margin-bottom: 0.75rem;
-}
-
-/* Social Media */
-.social-section {
+  margin-bottom: 0.8rem;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 2px solid #eaeaea;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: default;
+  font-size: 1rem;
   text-align: center;
 }
 
-.social-section h4 {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: #2c3e50;
+.sidebar-block:hover {
+  background: #f8f8f8;
+  color: #4fc08d;
+  transition: all 0.3s ease;
+}
+
+.sidebar-block:hover .animation-jump {
+  animation: jump 1s infinite;
+}
+
+.social-section {
+  text-align: center;
 }
 
 .social-links {
@@ -241,74 +215,35 @@ const News = [
   vertical-align: middle;
 }
 
-/* News */
-.news-item {
-  margin-bottom: 0.6rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid #eee;
-}
-
-.news-item:hover {
-  background: #f8f8f8;
-  color: #4fc08d;
-  transition: all 0.3s ease;
-}
-
-.news-item:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .sidebar {
     width: 100%;
-    min-width: 25%;
     height: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 1rem;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 1rem;
   }
 
   .sidebar-card {
-    flex: 1 1 300px;
-    min-width: 250px;
-    margin: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
   }
 
-  .profile-section {
-    padding: 1.5rem;
-  }
-
-  .profile-photo img {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
-  }
-
-  .profile-info h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .info-item {
-    margin-bottom: 0.5rem;
+  .sidebar-card img {
+    width: 150px;
+    height: 150px;
   }
 
   .social-links {
     justify-content: center;
-  }
-}
-
-@media (max-width: 600px) {
-  .profile-section {
-    flex-direction: column;
-    text-align: center;
+    gap: 1rem;
   }
 
-  .sidebar-card {
-    flex: 1 1 100%;
+  .tooltip-wrapper {
+    width: 40px;
+    height: 40px;
   }
 }
 </style>
