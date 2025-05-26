@@ -1,15 +1,29 @@
+<script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faHouse, faRadio, faFlask } from '@fortawesome/free-solid-svg-icons'
+
+</script>
+
+
 <template>
   <div class="header">
     <div class="header-left">
       <h1>ROLAND</h1>
     </div>
-    <nav class="header-right">
-      <router-link to="/" class="nav-link">About Me</router-link>
-      <router-link to="/publication" class="nav-link">Publication</router-link>
-      <router-link to="/education" class="nav-link disabled" title="Coming Soon">Education</router-link>
-      <router-link to="/experience" class="nav-link disabled" title="Coming Soon">Experience</router-link>
-      <router-link to="/space" class="nav-link disabled" title="Coming Soon">Space</router-link>
-    </nav>
+    <div class="nav-block">
+      <router-link to="/" class="nav-box">
+        <FontAwesomeIcon :icon="faHouse" />
+        Home
+      </router-link>
+      <router-link to="/publication" class="nav-box">
+        <FontAwesomeIcon :icon="faRadio" />
+        Publication
+      </router-link>
+      <router-link to="/project" class="nav-box disabled">
+        <FontAwesomeIcon :icon="faFlask" />
+        Project
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -48,82 +62,23 @@
   transform: scale(1.05);
 }
 
-.header-right {
+.nav-block {
   display: flex;
   gap: 1.5rem;
   align-items: center;
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  padding: 0.5rem 0.8rem;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background-color: white;
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav-link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.nav-link:hover::after {
-  width: 80%;
-}
-
-.nav-link.router-link-active {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
-.nav-link.router-link-active::after {
-  width: 80%;
-}
-
-.nav-link.disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  pointer-events: none;
-  position: relative;
-}
-
-.nav-link.disabled::before {
-  content: '🚧';
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.8rem;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.nav-link.disabled:hover::before {
-  opacity: 1;
-}
 
 @media (max-width: 768px) {
   .header {
     padding: 0 1rem;
   }
 
-  .header-right {
+  .nav-block {
     gap: 0.8rem;
   }
 
-  .nav-link {
+  .nav-box {
     padding: 0.4rem 0.6rem;
     font-size: 0.9rem;
   }

@@ -92,7 +92,7 @@
 .scrollbar {
     text-align: center;
     overflow-y: auto;
-    max-height: 200px;
+    max-height: 300px;
 }
   
 .scrollbar::-webkit-scrollbar {
@@ -112,4 +112,64 @@
 .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #3da87a;
 }
-  
+
+/* Navigator */
+.nav-box {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-box::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-box:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-box:hover::after {
+  width: 80%;
+}
+
+.nav-box.router-link-active {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.nav-box.router-link-active::after {
+  width: 80%;
+}
+
+.nav-box.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  position: relative;
+}
+
+.nav-box.disabled::before {
+  content: '🚧';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-box.disabled:hover::before {
+  opacity: 1;
+}

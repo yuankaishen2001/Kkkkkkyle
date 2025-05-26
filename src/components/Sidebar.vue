@@ -1,6 +1,6 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faRankingStar, faFilePdf, faUniversity, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faRankingStar, faFilePdf, faEnvelope, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'vue-router'
 
@@ -42,14 +42,14 @@ const News = [
     <!-- Profile Card -->
     <div class="sidebar-card">
       <img src="@/assets/profile/profile_life.jpg" alt="Profile Photo">
-      <h3 style="margin: 0 0 1rem 0; color: #2c3e50; font-size: 1.5rem;">Minrui Xu</h3>
-      <div class="sidebar-block">
-        <FontAwesomeIcon :icon="faUniversity" class="animation-jump" />
-        <p style="margin: 0;">HKUST, Hong Kong</p>
-      </div>
-      <div class="sidebar-block">
+      <!-- <h3 style="margin: 0; font-size: 1.5rem;">Minrui Xu</h3> -->
+      <!-- <div class="sidebar-block">
         <FontAwesomeIcon :icon="faEnvelope" class="animation-jump" />
         <p style="margin: 0;">mxubh@connect.ust.hk</p>
+      </div> -->
+      <div class="sidebar-block">
+        <FontAwesomeIcon :icon="faEnvelope" />
+        <h3 style="margin: 0; font-size: 1.5rem;">Minrui Xu</h3>
       </div>
     </div>
 
@@ -100,8 +100,8 @@ const News = [
 
 .sidebar-card {
   background: white;
-  border-radius: 8px;
-  padding: 0.5rem;
+  border-radius: 12px;
+  /* padding: 0.5rem; */
   text-align: center;
   position: relative;
 }
@@ -112,8 +112,6 @@ const News = [
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4fc08d;
-  margin-bottom: 0rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
