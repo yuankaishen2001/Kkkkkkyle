@@ -1,10 +1,13 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faRankingStar, faFilePdf, faEnvelope, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
+import { faRankingStar, faFilePdf, faEnvelope, faEnvelopeOpen, faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
 import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'vue-router'
+import { ref } from 'vue'
 
 const router = useRouter()
+const isClicked = ref(false)
+const isHovered = ref(false)
 
 const SocialMedia = [
   { name: 'Google Scholar', icon: faGoogleScholar, color: '#4A90E2', url: 'https://scholar.google.com/citations?user=2QyPdfgAAAAJ&hl=en' },
@@ -42,14 +45,13 @@ const News = [
     <!-- Profile Card -->
     <div class="sidebar-card">
       <img src="@/assets/profile/profile_life.jpg" alt="Profile Photo">
-      <!-- <h3 style="margin: 0; font-size: 1.5rem;">Minrui Xu</h3> -->
-      <!-- <div class="sidebar-block">
-        <FontAwesomeIcon :icon="faEnvelope" class="animation-jump" />
-        <p style="margin: 0;">mxubh@connect.ust.hk</p>
-      </div> -->
-      <div class="sidebar-block">
-        <FontAwesomeIcon :icon="faEnvelope" />
+      <div class="sidebar-block" @click="isClicked = !isClicked">
         <h3 style="margin: 0; font-size: 1.5rem;">Minrui Xu</h3>
+        <FontAwesomeIcon :icon="(isClicked) ? faBarsStaggered : faBars" />
+      </div>
+      <div v-if="isClicked" class="sidebar-block" style="animation: dropdown 0.3s" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
+        <FontAwesomeIcon :icon="isHovered ? faEnvelopeOpen : faEnvelope" />
+        <p style="margin: 0;">mxubh@connect.ust.hk</p>
       </div>
     </div>
 
@@ -101,7 +103,7 @@ const News = [
 .sidebar-card {
   background: white;
   border-radius: 12px;
-  /* padding: 0.5rem; */
+  padding: 0.5rem;
   text-align: center;
   position: relative;
 }
@@ -125,7 +127,7 @@ const News = [
   border-bottom: 2px solid #eaeaea;
   border-radius: 6px;
   transition: all 0.2s ease;
-  cursor: default;
+  cursor: pointer;
   font-size: 1rem;
   text-align: center;
 }
@@ -136,8 +138,12 @@ const News = [
   transition: all 0.3s ease;
 }
 
-.sidebar-block:hover .animation-jump {
-  animation: jump 1s infinite;
+.sidebar-block svg {
+  transition: transform 0.3s ease;
+}
+
+.sidebar-block:hover svg {
+  transform: scale(1.1);
 }
 
 .social-section {

@@ -78,7 +78,7 @@ const publication = [
     venue: "ACL 2025 Main",
     img: ScaleBiO,
     buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "#"},
+      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2406.19976"},
       {button: "GitHub", logo: faGithub, link: "https://github.com/2003pro/ScaleBiO"}
     ],
     tags: ['Bilevel Optimization', 'Data Reweighting'],
