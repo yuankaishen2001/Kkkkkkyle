@@ -1,7 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faRankingStar, faFilePdf, faEnvelope, faEnvelopeOpen, faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faXTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faRankingStar, faFilePdf, faEnvelopeOpen, faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
+import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faEnvelope } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
@@ -10,31 +10,17 @@ const isClicked = ref(false)
 const isHovered = ref(false)
 
 const SocialMedia = [
-  { name: 'Google Scholar', icon: faGoogleScholar, color: '#4A90E2', url: 'https://scholar.google.com/citations?user=2QyPdfgAAAAJ&hl=en' },
-  { name: 'GitHub', icon: faGithub, color: '#333', url: 'https://github.com/RolandMinrui' },
-  { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/minrui-xu-531b30242/' },
-  { name: 'CV', icon: faFilePdf, color: '#2E7D32', url: '#', isRouter: true },
-  // { name: 'X', icon: faXTwitter, color: '#000000' },
-  { name: 'Instagram', icon: faInstagram, 
-    color: 'linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80)' },
+  { name: 'Google Scholar', icon: faGoogleScholar, color: '#4A90E2', url: 'https://scholar.google.com/citations?user=LiIKEyMAAAAJ&hl=en' },
+  { name: 'GitHub', icon: faGithub, color: '#333', url: 'https://github.com/yuankaishen2001' },
+  { name: 'Email', icon: faEnvelope, color: '#2E7D32', url: 'mailto:kaisheny@hkust-gz.edu.cn' },
+  // { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/minrui-xu-531b30242/' },
+  
 ];
 
 const News = [
   {
-    date: '2025.05',
-    content: 'One paper accepted to ACL 2025!',
-  },
-  {
-    date: '2024.10',
-    content: 'One paper accepted to MATH-AI Workshop at NeurIPS 2024!',
-  },
-  {
-    date: '2024.09',
-    content: 'One paper accepted to EMNLP 2024!',
-  },
-  {
-    date: '2024.07',
-    content: 'One paper accepted to UIST 2024!',
+    date: '2025.09',
+    content: 'I am beginning my PhD journey at HKUST (GZ)! 🤓',
   },
 ];
 </script>
@@ -44,14 +30,14 @@ const News = [
   <div class="sidebar">
     <!-- Profile Card -->
     <div class="sidebar-card">
-      <img src="@/assets/profile/profile_life.jpg" alt="Profile Photo">
+      <img src="@/assets/profile/KaishenYuan.png" alt="Profile Photo">
       <div class="sidebar-block" @click="isClicked = !isClicked">
-        <h3 style="margin: 0; font-size: 1.5rem;">Minrui Xu</h3>
+        <h3 style="margin: 0; font-size: 1.5rem;">Kaishen Yuan</h3>
         <FontAwesomeIcon :icon="(isClicked) ? faBarsStaggered : faBars" />
       </div>
       <div v-if="isClicked" class="sidebar-block" style="animation: dropdown 0.3s" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
         <FontAwesomeIcon :icon="isHovered ? faEnvelopeOpen : faEnvelope" />
-        <p style="margin: 0;">mxubh@connect.ust.hk</p>
+        <p style="margin: 0;">Stay humble, hustle hard! 🖖</p>
       </div>
     </div>
 

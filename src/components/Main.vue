@@ -1,24 +1,29 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGraduationCap, faStar, faUser, faBook, faFileAlt, faCircleQuestion } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faStar, faUser, faBook, faFileAlt, faCircleQuestion, faAward, faCheckCircle, faClipboardList} from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import HKUST  from '@/assets/institution/HKUST.png'
-import Microsoft  from '@/assets/institution/Microsoft.png'
+import TJU  from '@/assets/institution/TJU.png'
 import Publication from '@/views/publication.vue'
 
 const education = [
   {
     institution: "The Hong Kong University of Science and Technology (Guangzhou)",
-    program: "Ph.D in Computer Science",
-    time: "Incoming",
+    program: "PhD in Artificial Intelligence",
+    time: "Sep 2025 - Present",
     logo: HKUST,
   },
   {
-    institution: "The Hong Kong University of Science and Technology",
-    program: "BSc in Data Science and Technology; BSc in Mathematics",
-    time: "Sep 2021 - present",
-    logo: HKUST,
-    tags: ["Dean's List"]
+    institution: "Tianjin University",
+    program: "MSc in Information and Communication Engineering",
+    time: "Sep 2022 - Jan 2025",
+    logo: TJU,
+  },
+  {
+    institution: "Tianjin University",
+    program: "BSc in Communication Engineering",
+    time: "Sep 2018 - Jun 2022",
+    logo: TJU,
   }
 ];
 
@@ -47,11 +52,15 @@ const experience = [
       </div>
       <p style="line-height: 1.5;">
         Welcome to my academic homepage! 👏
-        I am Xu Minrui (徐敏瑞), also known as Roland. I am a final year undergraduate student at <a href="https://hkust.edu.hk" target="_blank" rel="noopener noreferrer">The Hong Kong University of Science and Technology (HKUST)</a>, pursuing a double degree in Data Science and Technology, and Mathematics.
-        I am excited to announce that I will be joining the <a href="https://www.hkust-gz.edu.cn" target="_blank" rel="noopener noreferrer">LARK Lab@HKUST (GZ)</a> to pursue my Ph.D. in Computer Science under the supervision of Prof. <a href="https://cartus.github.io" target="_blank" rel="noopener noreferrer">Guo Zhijiang</a>.
+        My name is Kaishen Yuan (苑凯深). I am currently a first-year PhD candidate at the Hong Kong University of Science and Technology (Guangzhou), supervised by <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=401" target="_blank" rel="noopener noreferrer">Prof. Yutao Yue</a>. 
+        Prior to this, I obtained my Bachelor's and Master's degrees from Tianjin University in 2022 and 2025, respectively. 
+        I also work closely with <a href="https://zitong-yu.github.io/yzt/" target="_blank" rel="noopener noreferrer">Prof. Zitong Yu</a> at Great Bay University.
       </p>
       <p style="line-height: 1.5;">
-        Currently, I am a Research Intern at <a href="https://www.hkust-gz.edu.cn" target="_blank" rel="noopener noreferrer">Microsoft Research Asia (MSRA)</a> in the Machine Learning Group, working with the project <a href="https://github.com/microsoft/RD-Agent" target="_blank" rel="noopener noreferrer">RD-Agent</a>.
+        My research interests primarily lie in <em>Affective Computing</em>, <em>Facial Analysis</em>, <em>Generative AI</em>.
+      </p>
+      <p style="line-height: 1.5;">
+        If you see potential for collaboration, please don't hesitate to reach out.
       </p>
     </section>
     
@@ -75,29 +84,54 @@ const experience = [
       </div>
     </section>
     
-    <!-- Experience -->
+    <!-- Selected Publication -->
+    <Publication :is_selected="true" />
+
     <section>
       <div class="academic-header">
         <h2>
-          <FontAwesomeIcon :icon="faStar" style="color: #4fc08d"/> Experience
+          <FontAwesomeIcon :icon="faClipboardList" style="color: #4fc08d"/> Paper Review
         </h2>
       </div>
-      <div v-for="exp in experience" :key="exp.program" class="academic-block">
-        <img :src="exp.logo" :alt="exp.institution + ' Logo'" class="academic-logo">
-        <div class="academic-content">
-          <h3>{{ exp.institution }}</h3>
-          <p>{{ exp.program }}</p>
-          <p class="time">{{ exp.time }}</p>
-          <div class="academic-tags" v-if="exp.buttons">
-            <a v-for="button in exp.buttons" :key="button.button" :href="button.link" target="_blank" rel="noopener noreferrer" class="academic-button">
-              <FontAwesomeIcon :icon="button.logo" /> {{ button.button }}
-            </a>
-          </div>
-        </div>
-      </div>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          <strong>Conferences:</strong> NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24
+        </li>
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          <strong>Journals:</strong> IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), The Visual Computer (TVC)
+        </li>
+      </ul>
     </section>
-    
-    <!-- Selected Publication -->
-    <Publication :is_selected="true" />
+
+
+    <!-- Honors & Awards -->
+    <section>
+      <div class="academic-header">
+        <h2>
+          <FontAwesomeIcon :icon="faAward" style="color: #4fc08d"/> Honors & Awards
+        </h2>
+      </div>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          Tianjin University Academic Scholarship (Three times)
+        </li>
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          Tianjin University Meritorious Student Scholarship (Three times)
+        </li>
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          Tianjin University Outstanding Student Honor (Top 2%)
+        </li>
+        <li>
+          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
+          Tianjin University Zhuang Bingchang Scholarship
+        </li>
+      </ul>
+    </section>
+
   </main>
 </template>

@@ -5,12 +5,15 @@ import { faCircleQuestion, faSort, faSortUp, faSortDown, faBook, faFileAlt, faSe
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 // Publication Thumbnails
-import RD_Agent from '@/assets/publication/RD-Agent.png'
-import RD_Agent_Quant from '@/assets/publication/RD-Agent_Quant.png'
-import ScaleBiO from '@/assets/publication/ScaleBiO.png'
-import Math_for_AI from '@/assets/publication/Math-for-AI.png'
-import trustworthy_distillation from '@/assets/publication/trustworthy_distillation.png'
-import DiscipLink from '@/assets/publication/DiscipLink.png'
+import AUFormer from '@/assets/publication/AUFormer.png'
+import ANT from '@/assets/publication/ANT.png'
+import AUTTT from '@/assets/publication/AUTTT.png'
+import EmoLLAMA from '@/assets/publication/EmoLLAMA.png'
+import FEALLM from '@/assets/publication/FEALLM.png'
+import MedTVTR1 from '@/assets/publication/MedTVTR1.png'
+import PeriodLLM from '@/assets/publication/PeriodLLM.png'
+import SACL from '@/assets/publication/SACL.png'
+
 
 // Add reactive reference and computed property
 import { ref, computed } from 'vue'
@@ -48,76 +51,93 @@ const filtered_publication = computed(() => {
 });
 
 const publication = [
-{
-    title: "R&D-Agent: Automating Data-Driven AI Solution Building Through LLM-Powered Automated Research, Development, and Evolution",
-    author: "Xu Yang, Xiao Yang, Shikai Fang, Bowen Xian, Yuante Li, Jian Wang, <u>Minrui Xu</u>, Haoran Pan, Xinpeng Hong, Weiqing Liu, Yelong Shen, Weizhu Chen, Jiang Bian",
-    venue: "Arixv",
-    img: RD_Agent,
-    buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2505.14738"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/microsoft/RD-Agent"}
-    ],
-    tags: ['MLEngineering', 'Data Science Agents'],
-    selected: false
-  },
   {
-    title: "R&D-Agent-Quant: A Multi-Agent Framework for Data-Centric Factors and Model Joint Optimization",
-    author: "Yuante Li, Xu Yang, Xiao Yang, <u>Minrui Xu</u>, Xisen Wang, Weiqing Liu, Jiang Bian",
-    venue: "Arixv",
-    img: RD_Agent_Quant,
+    title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",
+    author: "Yuting Zhang*, <strong>Kaishen Yuan</strong>*, Hao Lu, Yutao Yue, Jintai Chen, Kaishun Wu",
+    venue: "Arxiv",
+    img: MedTVTR1,
     buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2505.15155"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/microsoft/RD-Agent"}
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.18512"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/keke-nice/MedTVT-R1"}
     ],
-    tags: ['Quantitative Finance Agents'],
-    selected: false
-  },
-  {
-    title: "ScaleBiO: Scalable Bilevel Optimization for LLM Data Reweighting",
-    author: "Rui Pan, Dylan Zhang, Hanning Zhang, Xingyuan Pan, <u>Minrui Xu</u>, Jipeng Zhang, Renjie Pi, Xiaoyu Wang, Tong Zhang",
-    venue: "ACL 2025 Main",
-    img: ScaleBiO,
-    buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2406.19976"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/2003pro/ScaleBiO"}
-    ],
-    tags: ['Bilevel Optimization', 'Data Reweighting'],
-    selected: false
-  },
-  {
-    title: "Math for AI: On the Generalization of Learning Mathematical Problem Solving",
-    author: "Ruochen Zhou, <u>Minrui Xu</u>, Shiqi Chen, Junteng Liu, Yunqi Li, Xinxin Lin, Zhengyu Chen, Junxian He",
-    venue: "NeurIPS 2024 Workshop",
-    img: Math_for_AI,
-    buttons: [
-      {button: "Openreview", logo: faFileAlt, link: "https://openreview.net/forum?id=xlnvZ85CSo"}
-    ],
-    tags: ['Math for AI'],
-    selected: false
-  },
-  {
-    title: "FIRST: Teach A Reliable Large Language Model Through Efficient Trustworthy Distillation",
-    author: "KaShun Shum*, <u>Xu Minrui</u>*, Jianshu Zhang*, Zixin Chen, Shizhe Diao, Hanze Dong, Jipeng Zhang, Muhammad Omer Raza",
-    venue: "EMNLP 2024 Main",
-    img: trustworthy_distillation,
-    buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2408.12168"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/SHUMKASHUN/FIRST"}
-    ],
-    tags: ['Trustworthy', 'Knowledge Distillation', 'Efficient Post-training'],
     selected: true
   },
   {
-    title: "DiscipLink: Unfolding Interdisciplinary Information Seeking Process via Human-AI Co-Exploration",
-    author: "Chengbo Zheng, Yuanhao Zhang, Zeyu Huang, Chuhan Shi, Minrui Xu, Xiaojuan Ma",
-    venue: "UIST 2024",
-    img: DiscipLink,
+    title: "ANT: Adaptive Neural Temporal-Aware Text-to-Motion Model",
+    author: "Wenshuo Chen, Kuimou Yu, Haozhe Jia, <strong>Kaishen Yuan</strong>, Bowen Tian, Songning Lai, Hongru Xiao, Erhang Zhang, Lei Wang, Yutao Yue",
+    venue: "ACM MM 2025",
+    img: ANT,
     buttons: [
-      {button: "Arxiv", logo: faFileAlt, link: "https://arxiv.org/abs/2408.00447"}
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.02452"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/CCSCovenant/ANT"}
     ],
-    tags: ['Information Retrieval', 'Human-AI Collaboration', 'Interdisciplinary Research'],
     selected: false
-  }
+  },
+  {
+    title: "EMO-LLaMA: Enhancing Facial Emotion Understanding with Instruction Tuning",
+    author: "Bohao Xing, Zitong Yu, Xin Liu, <strong>Kaishen Yuan</strong>, Qilang Ye, Weicheng Xie, Huanjing Yue, Jingyu Yang, Heikki Kälviäinen",
+    venue: "Arxiv",
+    img: EmoLLAMA,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2408.11424"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
+    ],
+    selected: false
+  },
+  {
+    title: "FEALLM: Advancing Facial Emotion Analysis in Multimodal Large Language Models with Emotional Synergy and Reasoning",
+    author: "Zhuozhao Hu*, <strong>Kaishen Yuan</strong>*†, Xin Liu, Zitong Yu, Yuan Zong, Jingang Shi, Huanjing Yue, Jingyu Yang",
+    venue: "ACM MM 2025",
+    img: FEALLM,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2505.13419"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/953206211/FEALLM"}
+    ],
+    selected: true
+  },
+  {
+    title: "AU-TTT: Vision Test-Time Training model for Facial Action Unit Detection",
+    author: "Bohao Xing*, <strong>Kaishen Yuan</strong>*, Zitong Yu, Xin Liu, Heikki Kälviäinen",
+    venue: "ICME 2025",
+    img: AUTTT,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2503.23450"},
+    ],
+    selected: false
+  },
+  {
+    title: "Period-LLM: Extending the Periodic Capability of Multimodal Large Language Model",
+    author: "Yuting Zhang, Hao Lu, Qingyong Hu, Yin Wang, <strong>Kaishen Yuan</strong>, Xin Liu, Kaishun Wu",
+    venue: "CVPR 2025",
+    img: PeriodLLM,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Period-LLM_Extending_the_Periodic_Capability_of_Multimodal_Large_Language_Model_CVPR_2025_paper.pdf"},
+      {button: "GitHub", logo: faGithub, link: "https://github. com/keke-nice/Period-LLM"}
+    ],
+    selected: false
+  },
+  {
+    title: "AUFormer: Vision Transformers are Parameter-Efficient Facial Action Unit Detectors",
+    author: "<strong>Kaishen Yuan</strong>, Zitong Yu, Xin Liu, Weicheng Xie, Huanjing Yue, Jingyu Yang",
+    venue: "ECCV 2024",
+    img: AUFormer,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2403.04697"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/AUFormer"}
+    ],
+    selected: true
+  },
+  {
+    title: "Multi-scale Promoted Self-adjusting Correlation Learning for Facial Action Unit Detection",
+    author: "Xin Liu*, <strong>Kaishen Yuan</strong>*, Xuesong Niu, Jingang Shi, Zitong Yu, Huanjing Yue, Jingyu Yang",
+    venue: "IEEE TAFFC 2024",
+    img: SACL,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2308.07770"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/Self-adjusting-AU"}
+    ],
+    selected: true
+  },
 ];
 </script>
 
@@ -126,7 +146,7 @@ const publication = [
     <!-- Header -->
     <div class="academic-header">
       <h2>
-        <FontAwesomeIcon :icon="faBook" style="color: #4fc08d"/> {{ props.is_selected ? 'Selected Publication' : 'Publication' }}
+        <FontAwesomeIcon :icon="faBook" style="color: #4fc08d"/> {{ props.is_selected ? 'Selected Publication' : 'Publication (*Equal Contribution, †Project Lead)' }}
       </h2>
       
       <div class="academic-header-toolbox">

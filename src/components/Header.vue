@@ -8,7 +8,7 @@ import { faHouse, faRadio, faFlask } from '@fortawesome/free-solid-svg-icons'
 <template>
   <div class="header">
     <div class="header-left">
-      <h1>ROLAND</h1>
+      <h1>Kkkkkkyle</h1>
     </div>
     <div class="nav-block">
       <router-link to="/" class="nav-box">
@@ -18,10 +18,6 @@ import { faHouse, faRadio, faFlask } from '@fortawesome/free-solid-svg-icons'
       <router-link to="/publication" class="nav-box">
         <FontAwesomeIcon :icon="faRadio" />
         Publication
-      </router-link>
-      <router-link to="/project" class="nav-box disabled">
-        <FontAwesomeIcon :icon="faFlask" />
-        Project
       </router-link>
     </div>
   </div>
