@@ -1,6 +1,6 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faGraduationCap, faStar, faUser, faBook, faFileAlt, faCircleQuestion, faAward, faCheckCircle, faClipboardList} from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap, faStar, faUser, faBook, faFileAlt, faCircleQuestion, faAward, faCheckCircle, faClipboardList, faSquareCheck, faCircle, faSquare	} from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import HKUST  from '@/assets/institution/HKUST.png'
 import TJU  from '@/assets/institution/TJU.png'
@@ -24,18 +24,6 @@ const education = [
     program: "BSc in Communication Engineering",
     time: "Sep 2018 - Jun 2022",
     logo: TJU,
-  }
-];
-
-const experience = [
-  {
-    institution: "Microsoft Research Aisa (MSRA)",
-    program: "Research Intern at Machine Learning Group",
-    time: "Jan 2025 - present",
-    logo: Microsoft,
-    buttons: [
-      {button: "RD-Agent", logo: faGithub, link: "https://github.com/microsoft/RD-Agent"}
-    ]
   }
 ];
 </script>
@@ -95,12 +83,12 @@ const experience = [
       </div>
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          <strong>Conferences:</strong> NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24
+          <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;Conferences: NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
         </li>
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          <strong>Journals:</strong> IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), The Visual Computer (TVC)
+          <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;Journals: IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), The Visual Computer (TVC)</span>
         </li>
       </ul>
     </section>
@@ -115,20 +103,20 @@ const experience = [
       </div>
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          Tianjin University Academic Scholarship (Three times)
+          <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;Tianjin University Academic Scholarship (Three times)</span>
         </li>
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          Tianjin University Meritorious Student Scholarship (Three times)
+          <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;Tianjin University Meritorious Student Scholarship (Three times)</span>
         </li>
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          Tianjin University Outstanding Student Honor (Top 2%)
+          <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;Tianjin University Outstanding Student Honor (Top 2%)</span>
         </li>
         <li>
-          <FontAwesomeIcon :icon="faCheckCircle" style="color: #4fc08d"/> 
-          Tianjin University Zhuang Bingchang Scholarship
+          <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;" /> 
+          <span>&nbsp;&nbsp;Tianjin University Zhuang Bingchang Scholarship</span>
         </li>
       </ul>
     </section>

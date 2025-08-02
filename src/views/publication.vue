@@ -63,17 +63,6 @@ const publication = [
     selected: true
   },
   {
-    title: "ANT: Adaptive Neural Temporal-Aware Text-to-Motion Model",
-    author: "Wenshuo Chen, Kuimou Yu, Haozhe Jia, <strong>Kaishen Yuan</strong>, Bowen Tian, Songning Lai, Hongru Xiao, Erhang Zhang, Lei Wang, Yutao Yue",
-    venue: "ACM MM 2025",
-    img: ANT,
-    buttons: [
-      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.02452"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/CCSCovenant/ANT"}
-    ],
-    selected: false
-  },
-  {
     title: "EMO-LLaMA: Enhancing Facial Emotion Understanding with Instruction Tuning",
     author: "Bohao Xing, Zitong Yu, Xin Liu, <strong>Kaishen Yuan</strong>, Qilang Ye, Weicheng Xie, Huanjing Yue, Jingyu Yang, Heikki Kälviäinen",
     venue: "Arxiv",
@@ -81,6 +70,17 @@ const publication = [
     buttons: [
       {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2408.11424"},
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
+    ],
+    selected: false
+  },
+  {
+    title: "ANT: Adaptive Neural Temporal-Aware Text-to-Motion Model",
+    author: "Wenshuo Chen, Kuimou Yu, Haozhe Jia, <strong>Kaishen Yuan</strong>, Bowen Tian, Songning Lai, Hongru Xiao, Erhang Zhang, Lei Wang, Yutao Yue",
+    venue: "ACM MM 2025",
+    img: ANT,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.02452"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/CCSCovenant/ANT"}
     ],
     selected: false
   },

@@ -1,7 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faRankingStar, faFilePdf, faEnvelopeOpen, faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons'
-import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faEnvelope } from '@fortawesome/free-brands-svg-icons'
+import { faRankingStar, faFilePdf, faEnvelopeOpen, faBars, faBarsStaggered, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGoogleScholar, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
@@ -36,7 +36,7 @@ const News = [
         <FontAwesomeIcon :icon="(isClicked) ? faBarsStaggered : faBars" />
       </div>
       <div v-if="isClicked" class="sidebar-block" style="animation: dropdown 0.3s" @mouseenter="isHovered = true" @mouseleave="isHovered = false">
-        <FontAwesomeIcon :icon="isHovered ? faEnvelopeOpen : faEnvelope" />
+        <!-- <FontAwesomeIcon :icon="isHovered ? faEnvelopeOpen : faEnvelope" /> -->
         <p style="margin: 0;">Stay humble, hustle hard! 🖖</p>
       </div>
     </div>
