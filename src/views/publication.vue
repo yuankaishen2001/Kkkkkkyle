@@ -13,6 +13,7 @@ import FEALLM from '@/assets/publication/FEALLM.png'
 import MedTVTR1 from '@/assets/publication/MedTVTR1.png'
 import PeriodLLM from '@/assets/publication/PeriodLLM.png'
 import SACL from '@/assets/publication/SACL.png'
+import CoEmoGen from '@/assets/publication/CoEmoGen.png'
 
 
 // Add reactive reference and computed property
@@ -51,6 +52,17 @@ const filtered_publication = computed(() => {
 });
 
 const publication = [
+  {
+    title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
+    author: "<strong>Kaishen Yuan</strong>, Yuting Zhang, Shang Gao, Yijie Zhu, Wenshuo Chen, Yutao Yue",
+    venue: "Arxiv",
+    img: CoEmoGen,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2508.03535"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/CoEmoGen"}
+    ],
+    selected: true
+  },
   {
     title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",
     author: "Yuting Zhang*, <strong>Kaishen Yuan</strong>*, Hao Lu, Yutao Yue, Jintai Chen, Kaishun Wu",

@@ -84,7 +84,7 @@ const education = [
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
-          <span>&nbsp;&nbsp;Conferences: NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
+          <span>&nbsp;&nbsp;Conferences: AAAI 26, NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
         </li>
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
