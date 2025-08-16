@@ -12,7 +12,7 @@ const isHovered = ref(false)
 const SocialMedia = [
   { name: 'Google Scholar', icon: faGoogleScholar, color: '#4A90E2', url: 'https://scholar.google.com/citations?user=LiIKEyMAAAAJ&hl=en' },
   { name: 'GitHub', icon: faGithub, color: '#333', url: 'https://github.com/yuankaishen2001' },
-  { name: 'Email', icon: faEnvelope, color: '#2E7D32', url: 'mailto:kaisheny@hkust-gz.edu.cn' },
+  { name: 'Email', icon: faEnvelope, color: '#2E7D32', url: 'mailto:kyuan156@connect.hkust-gz.edu.cn' },
   // { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/minrui-xu-531b30242/' },
   
 ];
