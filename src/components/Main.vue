@@ -40,7 +40,7 @@ const education = [
       </div>
       <p style="line-height: 1.5;">
         Welcome to my academic homepage! 👏
-        My name is Kaishen Yuan (苑凯深). I am currently a first-year PhD candidate at the Hong Kong University of Science and Technology (Guangzhou), supervised by <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=401" target="_blank" rel="noopener noreferrer">Prof. Yutao Yue</a>. 
+        My name is Kaishen Yuan (苑凯深). I am currently a first-year PhD student at the Hong Kong University of Science and Technology (Guangzhou), supervised by <a href="https://facultyprofiles.hkust-gz.edu.cn/faculty-personal-page?id=401" target="_blank" rel="noopener noreferrer">Prof. Yutao Yue</a>. 
         Prior to this, I obtained my Bachelor's and Master's degrees from Tianjin University in 2022 and 2025, respectively, with my Master's supervised by <a href="https://sites.google.com/view/xinliu/" target="_blank" rel="noopener noreferrer">Prof. Xin Liu</a>. 
         I also work closely with <a href="https://zitong-yu.github.io/yzt/" target="_blank" rel="noopener noreferrer">Prof. Zitong Yu</a> at Great Bay University.
       </p>
@@ -84,7 +84,7 @@ const education = [
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
-          <span>&nbsp;&nbsp;Conferences: AAAI 26, NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
+          <span>&nbsp;&nbsp;Conferences: ICLR 26, AAAI 26, NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
         </li>
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
