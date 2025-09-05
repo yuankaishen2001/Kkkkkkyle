@@ -14,6 +14,7 @@ import MedTVTR1 from '@/assets/publication/MedTVTR1.png'
 import PeriodLLM from '@/assets/publication/PeriodLLM.png'
 import SACL from '@/assets/publication/SACL.png'
 import CoEmoGen from '@/assets/publication/CoEmoGen.png'
+import AULLM from '@/assets/publication/AULLM.png'
 
 
 // Add reactive reference and computed property
@@ -82,6 +83,17 @@ const publication = [
     buttons: [
       {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2408.11424"},
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
+    ],
+    selected: false
+  },
+  {
+    title: "AU-LLM: Micro-Expression Action Unit Detection via Enhanced LLM-Based Feature Fusion",
+    author: "Zhishu Liu*, <strong>Kaishen Yuan</strong>*, Bo Zhao, Yong Xu, Zitong Yu",
+    venue: "CCBR 2025",
+    img: AULLM,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2507.21778"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/ZS-liu-JLU/AU-LLMs"}
     ],
     selected: false
   },
