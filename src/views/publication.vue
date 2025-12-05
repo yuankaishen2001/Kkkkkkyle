@@ -15,6 +15,7 @@ import PeriodLLM from '@/assets/publication/PeriodLLM.png'
 import SACL from '@/assets/publication/SACL.png'
 import CoEmoGen from '@/assets/publication/CoEmoGen.png'
 import AULLM from '@/assets/publication/AULLM.png'
+import POLARIS from '@/assets/publication/POLARIS.png'
 
 
 // Add reactive reference and computed property
@@ -53,6 +54,17 @@ const filtered_publication = computed(() => {
 });
 
 const publication = [
+  {
+    title: "POLARIS: Projection-Orthogonal Least Squares for Robust and Adaptive Inversion in Diffusion Models",
+    author: "Wenshuo Chen, Haosen Li, Shaofeng Liang, Lei Wang, Haozhe Jia, <strong>Kaishen Yuan</strong>, Jiemin Wu, Bowen Tian, Yutao Yue",
+    venue: "Arxiv",
+    img: POLARIS,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2512.00369"},
+      {button: "GitHub", logo: faGithub, link: "https://polaris-code-official.github.io/"}
+    ],
+    selected: true
+  },
   {
     title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
     author: "<strong>Kaishen Yuan</strong>, Yuting Zhang, Shang Gao, Yijie Zhu, Wenshuo Chen, Yutao Yue",
