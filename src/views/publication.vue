@@ -63,7 +63,7 @@ const publication = [
       {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2512.00369"},
       {button: "GitHub", logo: faGithub, link: "https://polaris-code-official.github.io/"}
     ],
-    selected: true
+    selected: false
   },
   {
     title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
