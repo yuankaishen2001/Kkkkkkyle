@@ -105,8 +105,8 @@ const publication = [
     venue: "ICASSP 2026",
     img: DiffRIM, 
     buttons: [
-      {button: "Paper", logo: faFileAlt, link: ""},
-      {button: "GitHub", logo: faGithub, link: ""}
+      {button: "Paper", logo: faFileAlt, link: "javascript:void(0)"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/luluisthebest/DiffRim"}
     ],
     selected: false
   },
