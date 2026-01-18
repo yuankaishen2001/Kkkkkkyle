@@ -16,6 +16,7 @@ import SACL from '@/assets/publication/SACL.png'
 import CoEmoGen from '@/assets/publication/CoEmoGen.png'
 import AULLM from '@/assets/publication/AULLM.png'
 import POLARIS from '@/assets/publication/POLARIS.png'
+import DiffRIM from '@/assets/publication/DiffRIM.png'
 
 
 // Add reactive reference and computed property
@@ -95,6 +96,17 @@ const publication = [
     buttons: [
       {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2408.11424"},
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
+    ],
+    selected: false
+  },
+  {
+    title: "DiffRIM: A Diffusion-Driven Model for High Efficiency Radar Interference Mitigation",
+    author: "Lulu Liu*, Runwei Guan*, <strong>Kaishen Yuan</strong>*, Yutao Yue, Fei Ma, Sheng Xu",
+    venue: "ICASSP 2026",
+    img: DiffRIM,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: ""},
+      {button: "GitHub", logo: faGithub, link: ""}
     ],
     selected: false
   },
