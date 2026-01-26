@@ -19,6 +19,10 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2026.01',
+    content: 'One paper on EICG is accepted by ICLR 2026. ✨',
+  },
+  {
     date: '2025.09',
     content: 'I am beginning my PhD journey at HKUST (GZ)! 🤓',
   },

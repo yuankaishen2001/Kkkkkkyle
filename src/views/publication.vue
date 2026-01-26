@@ -67,17 +67,6 @@ const publication = [
     selected: false
   },
   {
-    title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
-    author: "<strong>Kaishen Yuan</strong>, Yuting Zhang, Shang Gao, Yijie Zhu, Wenshuo Chen, Yutao Yue",
-    venue: "Arxiv",
-    img: CoEmoGen,
-    buttons: [
-      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2508.03535"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/CoEmoGen"}
-    ],
-    selected: true
-  },
-  {
     title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",
     author: "Yuting Zhang*, <strong>Kaishen Yuan</strong>*, Hao Lu, Yutao Yue, Jintai Chen, Kaishun Wu",
     venue: "Arxiv",
@@ -98,6 +87,17 @@ const publication = [
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
     ],
     selected: false
+  },
+  {
+    title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
+    author: "<strong>Kaishen Yuan</strong>, Yuting Zhang, Shang Gao, Yijie Zhu, Wenshuo Chen, Yutao Yue",
+    venue: "ICLR 2026",
+    img: CoEmoGen,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2508.03535"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/CoEmoGen"}
+    ],
+    selected: true
   },
   {
     title: "DiffRIM: A Diffusion-Driven Model for High Efficiency Radar Interference Mitigation",
