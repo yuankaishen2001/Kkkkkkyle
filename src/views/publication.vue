@@ -17,6 +17,7 @@ import CoEmoGen from '@/assets/publication/CoEmoGen.png'
 import AULLM from '@/assets/publication/AULLM.png'
 import POLARIS from '@/assets/publication/POLARIS.png'
 import DiffRIM from '@/assets/publication/DiffRIM.png'
+import GPTasPsychologist from '@/assets/publication/GPTasPsychologist.png'
 
 
 // Add reactive reference and computed property
@@ -160,7 +161,18 @@ const publication = [
     img: PeriodLLM,
     buttons: [
       {button: "Paper", logo: faFileAlt, link: "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhang_Period-LLM_Extending_the_Periodic_Capability_of_Multimodal_Large_Language_Model_CVPR_2025_paper.pdf"},
-      {button: "GitHub", logo: faGithub, link: "https://github. com/keke-nice/Period-LLM"}
+      {button: "GitHub", logo: faGithub, link: "https://github.com/keke-nice/Period-LLM"}
+    ],
+    selected: false
+  },
+  {
+    title: "GPT as Psychologist? Preliminary Evaluations for GPT-4V on Visual Affective Computing",
+    author: "Hao Lu, Xuesong Niu, Jiyao Wang, Yin Wang, Qingyong Hu, Jiaqi Tang, Yuting Zhang, <strong>Kaishen Yuan</strong>, Bin Huang, Zitong Yu, Dengbo He, Shuiguang Deng, Hao Chen, Yingcong Chen, Shiguang Shan",
+    venue: "CVPR 2024 Workshop",
+    img: GPTasPsychologist,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://openaccess.thecvf.com/content/CVPR2024W/CVPM/papers/Lu_GPT_as_Psychologist___Preliminary_Evaluations_for_GPT-4V_on_CVPRW_2024_paper.pdf"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/EnVision-Research/GPT4Affectivity"}
     ],
     selected: false
   },
