@@ -88,7 +88,7 @@ const education = [
         </li>
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
-          <span>&nbsp;&nbsp;Journals: IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), The Visual Computer (TVC)</span>
+          <span>&nbsp;&nbsp;Journals: IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), Pattern Recognition (PR), The Visual Computer (TVC)</span>
         </li>
       </ul>
     </section>
