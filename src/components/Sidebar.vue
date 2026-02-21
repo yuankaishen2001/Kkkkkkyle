@@ -19,6 +19,10 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2026.02',
+    content: 'One paper on Medical Reasoning and Diagnosis is accepted by CVPR 2026. Congrats to Yuting! 🎉',
+  },
+  {
     date: '2026.01',
     content: 'One paper on EICG is accepted by ICLR 2026. ✨',
   },

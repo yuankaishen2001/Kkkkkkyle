@@ -68,17 +68,6 @@ const publication = [
     selected: false
   },
   {
-    title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",
-    author: "Yuting Zhang*, <strong>Kaishen Yuan</strong>*, Hao Lu, Yutao Yue, Jintai Chen, Kaishun Wu",
-    venue: "Arxiv",
-    img: MedTVTR1,
-    buttons: [
-      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.18512"},
-      {button: "GitHub", logo: faGithub, link: "https://github.com/keke-nice/MedTVT-R1"}
-    ],
-    selected: true
-  },
-  {
     title: "EMO-LLaMA: Enhancing Facial Emotion Understanding with Instruction Tuning",
     author: "Bohao Xing, Zitong Yu, Xin Liu, <strong>Kaishen Yuan</strong>, Qilang Ye, Weicheng Xie, Huanjing Yue, Jingyu Yang, Heikki Kälviäinen",
     venue: "Arxiv",
@@ -88,6 +77,17 @@ const publication = [
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
     ],
     selected: false
+  },
+  {
+    title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",
+    author: "Yuting Zhang*, <strong>Kaishen Yuan</strong>*, Hao Lu, Yutao Yue, Jintai Chen, Kaishun Wu",
+    venue: "CVPR 2026",
+    img: MedTVTR1,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2506.18512"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/keke-nice/MedTVT-R1"}
+    ],
+    selected: true
   },
   {
     title: "CoEmoGen: Towards Semantically-Coherent and Scalable Emotional Image Content Generation",
