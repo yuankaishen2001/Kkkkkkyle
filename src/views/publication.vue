@@ -102,7 +102,7 @@ const publication = [
   },
   {
     title: "DiffRIM: A Diffusion-Driven Model for High Efficiency Radar Interference Mitigation",
-    author: "Lulu Liu*, Runwei Guan*, <strong>Kaishen Yuan</strong>*, Yutao Yue, Fei Ma, Sheng Xu",
+    author: "Lulu Liu*, Runwei Guan*, <strong>Kaishen Yuan</strong>*, Sheng Xu, Fei Ma, Yutao Yue",
     venue: "ICASSP 2026",
     img: DiffRIM, 
     buttons: [
