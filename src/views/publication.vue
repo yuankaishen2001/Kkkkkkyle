@@ -18,6 +18,7 @@ import AULLM from '@/assets/publication/AULLM.png'
 import POLARIS from '@/assets/publication/POLARIS.png'
 import DiffRIM from '@/assets/publication/DiffRIM.png'
 import GPTasPsychologist from '@/assets/publication/GPTasPsychologist.png'
+import MGFER from '@/assets/publication/MGFER.png'
 
 
 // Add reactive reference and computed property
@@ -77,6 +78,17 @@ const publication = [
       {button: "GitHub", logo: faGithub, link: "https://github.com/xxtars/EMO-LLaMA"}
     ],
     selected: false
+  },
+  {
+    title: "Multi-granularity Facial Emotional Representation with Unlabeled Data and Textual Supervision",
+    author: "<strong>Kaishen Yuan</strong>, Zitong Yu, Xin Liu, Bohao Xing, Yuting Zhang, Weicheng Xie, Linlin Shen, Björn W. Schuller",
+    venue: "IEEE TIP 2026",
+    img: MGFER,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://github.com/yuankaishen2001/MGFER"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/MGFER"}
+    ],
+    selected: true
   },
   {
     title: "MedTVT-R1: A Multimodal LLM Empowering Medical Reasoning and Diagnosis",

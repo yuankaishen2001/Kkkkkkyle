@@ -19,6 +19,10 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2026.03',
+    content: 'One paper on Multi-granularity Emotional Representation is accepted by IEEE TIP. 🎊',
+  },
+  {
     date: '2026.02',
     content: 'One paper on Medical Reasoning and Diagnosis is accepted by CVPR 2026. Congrats to Yuting! 🎉',
   },
