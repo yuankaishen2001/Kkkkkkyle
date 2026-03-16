@@ -1,7 +1,7 @@
 <script setup>
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faRankingStar, faFilePdf, faEnvelopeOpen, faBars, faBarsStaggered, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGoogleScholar, faGithub, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faRankingStar, faFilePdf, faEnvelopeOpen, faBars, faBarsStaggered, faEnvelope, faDatabase } from '@fortawesome/free-solid-svg-icons'
+import { faGoogleScholar, faGithub, faLinkedin, faInstagram, faOrcid } from '@fortawesome/free-brands-svg-icons'
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
 
@@ -14,7 +14,8 @@ const SocialMedia = [
   { name: 'GitHub', icon: faGithub, color: '#333', url: 'https://github.com/yuankaishen2001' },
   { name: 'Email', icon: faEnvelope, color: '#2E7D32', url: 'mailto:kyuan156@connect.hkust-gz.edu.cn' },
   { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/kaishen-yuan/' },
-  
+  { name: 'ORCID', icon: faOrcid, color: '#A6CE39', url: 'https://orcid.org/0009-0008-2353-2436' },
+  { name: 'DBLP', icon: faDatabase, color: '#1565C0', url: 'https://dblp.org/pid/354/7927.html' },
 ];
 
 const News = [
@@ -73,7 +74,7 @@ const News = [
     </div>
 
     <!-- News -->
-    <div class="sidebar-card scrollbar">
+    <div class="sidebar-card scrollbar" style="text-align: left;">
       <h3>News
         <FontAwesomeIcon :icon="faRankingStar" style="color: #4fc08d"/>
       </h3>

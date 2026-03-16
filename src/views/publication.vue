@@ -19,6 +19,8 @@ import POLARIS from '@/assets/publication/POLARIS.png'
 import DiffRIM from '@/assets/publication/DiffRIM.png'
 import GPTasPsychologist from '@/assets/publication/GPTasPsychologist.png'
 import MGFER from '@/assets/publication/MGFER.png'
+import AULLMplus from '@/assets/publication/AULLM++.png'
+import DeltaVLA from '@/assets/publication/DeltaVLA.png'
 
 
 // Add reactive reference and computed property
@@ -57,6 +59,28 @@ const filtered_publication = computed(() => {
 });
 
 const publication = [
+  {
+    title: "ΔVLA: Prior-Guided Vision-Language-Action Models via World Knowledge Variation",
+    author: "Yijie Zhu, Jie He, Rui Shao, <strong>Kaishen Yuan</strong>, Tao Tan, Xiaochen Yuan, Zitong Yu",
+    venue: "Arxiv",
+    img: DeltaVLA,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2603.08361"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/JiuTian-VL/DeltaVLA"}
+    ],
+    selected: false
+  },
+  {
+    title: "AULLM++: Structural Reasoning with Large Language Models for Micro-Expression Recognition",
+    author: "Zhishu Liu*, <strong>Kaishen Yuan</strong>*, Bo Zhao, Hui Ma, Zitong Yu",
+    venue: "Arxiv",
+    img: AULLMplus,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2603.08387"},
+      {button: "GitHub", logo: faGithub, link: "https://github.com/ZS-liu-JLU/AULLMplusplus"}
+    ],
+    selected: false
+  },
   {
     title: "POLARIS: Projection-Orthogonal Least Squares for Robust and Adaptive Inversion in Diffusion Models",
     author: "Wenshuo Chen, Haosen Li, Shaofeng Liang, Lei Wang, Haozhe Jia, <strong>Kaishen Yuan</strong>, Jiemin Wu, Bowen Tian, Yutao Yue",
