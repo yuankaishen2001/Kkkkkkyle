@@ -82,7 +82,7 @@ const News = [
         v-for="item in News"
         :key="item.date"
         class="sidebar-block"
-        style="flex-direction: column; align-items: flex-start; text-align: left;"
+        style="justify-content: flex-start; text-align: left;"
       >
         <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
         <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
