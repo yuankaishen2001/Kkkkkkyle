@@ -13,9 +13,9 @@ const SocialMedia = [
   { name: 'Google Scholar', icon: faGoogleScholar, color: '#4A90E2', url: 'https://scholar.google.com/citations?user=LiIKEyMAAAAJ&hl=en' },
   { name: 'GitHub', icon: faGithub, color: '#333', url: 'https://github.com/yuankaishen2001' },
   { name: 'Email', icon: faEnvelope, color: '#2E7D32', url: 'mailto:kyuan156@connect.hkust-gz.edu.cn' },
-  { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/kaishen-yuan/' },
   { name: 'ORCID', icon: faOrcid, color: '#A6CE39', url: 'https://orcid.org/0009-0008-2353-2436' },
-  { name: 'DBLP', icon: faDatabase, color: '#1565C0', url: 'https://dblp.org/pid/354/7927.html' },
+  { name: 'LinkedIn', icon: faLinkedin, color: '#0077B5', url: 'https://www.linkedin.com/in/kaishen-yuan/' },
+  // { name: 'DBLP', icon: faDatabase, color: '#1565C0', url: 'https://dblp.org/pid/354/7927.html' },
 ];
 
 const News = [
@@ -74,11 +74,16 @@ const News = [
     </div>
 
     <!-- News -->
-    <div class="sidebar-card scrollbar" style="text-align: left;">
+    <div class="sidebar-card scrollbar">
       <h3>News
         <FontAwesomeIcon :icon="faRankingStar" style="color: #4fc08d"/>
       </h3>
-      <div v-for="item in News" :key="item.date" class="sidebar-block">
+      <div
+        v-for="item in News"
+        :key="item.date"
+        class="sidebar-block"
+        style="flex-direction: column; align-items: flex-start; text-align: left;"
+      >
         <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
         <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
       </div>
