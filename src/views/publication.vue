@@ -109,7 +109,7 @@ const publication = [
     venue: "IEEE TIP 2026",
     img: MGFER,
     buttons: [
-      {button: "Paper", logo: faFileAlt, link: "https://github.com/yuankaishen2001/MGFER"},
+      {button: "Paper", logo: faFileAlt, link: "https://doi.org/10.1109/TIP.2026.3675883"},
       {button: "GitHub", logo: faGithub, link: "https://github.com/yuankaishen2001/MGFER"}
     ],
     selected: true
