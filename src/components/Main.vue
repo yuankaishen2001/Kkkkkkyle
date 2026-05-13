@@ -104,6 +104,10 @@ const education = [
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
           <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/> 
+          <span>&nbsp;&nbsp;ICML 2026 Gold Reviewer</span>
+        </li>
+        <li>
+          <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/> 
           <span>&nbsp;&nbsp;Tianjin University Academic Scholarship (Three times)</span>
         </li>
         <li>
