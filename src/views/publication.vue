@@ -95,7 +95,7 @@ const publication = [
   {
     title: "EMO-LLaMA: Enhancing Facial Emotion Understanding with Instruction Tuning",
     author: "Bohao Xing, Zitong Yu, Xin Liu, <strong>Kaishen Yuan</strong>, Qilang Ye, Weicheng Xie, Huanjing Yue, Jingyu Yang, Heikki Kälviäinen",
-    venue: "Arxiv",
+    venue: "IJCV 2026",
     img: EmoLLAMA,
     buttons: [
       {button: "Paper", logo: faFileAlt, link: "https://arxiv.org/pdf/2408.11424"},
