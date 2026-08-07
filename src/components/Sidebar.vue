@@ -71,6 +71,13 @@ const News = [
           <FontAwesomeIcon :icon="link.icon" />
         </a>
       </div>
+      <div class="visitor-count">
+        <img
+          src="https://komarev.com/ghpvc/?username=yuankaishen2001-Kkkkkkyle&label=Visitors&color=4fc08d&style=flat"
+          alt="Visitor count"
+          referrerpolicy="no-referrer"
+        >
+      </div>
     </div>
 
     <!-- News -->
@@ -159,6 +166,21 @@ const News = [
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.visitor-count {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.75rem;
+}
+
+.visitor-count img {
+  width: auto;
+  height: 20px;
+  border: 0;
+  border-radius: 0;
+  object-fit: contain;
+  transition: none;
 }
 
 .tooltip-wrapper {
