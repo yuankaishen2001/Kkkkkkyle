@@ -90,20 +90,13 @@ const News = [
     </div>
 
     <!-- Visitor Count -->
-    <div class="sidebar-card visitor-card">
-      <div class="visitor-card-header">
-        <span class="visitor-live-dot" aria-hidden="true"></span>
-        <span>Website Visitors</span>
-      </div>
-      <div class="visitor-badge">
-        <img
-          class="visitor-badge-image"
-          src="https://komarev.com/ghpvc/?username=yuankaishen2001-Kkkkkkyle&label=VISITORS&color=4fc08d&style=for-the-badge"
-          alt="Website visitor count"
-          referrerpolicy="no-referrer"
-        >
-      </div>
-      <p class="visitor-caption">Thanks for stopping by ✨</p>
+    <div class="visitor-count">
+      <img
+        class="visitor-count-image"
+        src="https://hits.sh/yuankaishen2001.github.io/Kkkkkkyle.svg?view=total&style=flat-square&label=visitors&color=4fc08d&labelColor=f1f3f5"
+        alt="Website visitor count"
+        referrerpolicy="no-referrer"
+      >
     </div>
   </div>
 </template>
@@ -240,86 +233,25 @@ const News = [
   vertical-align: middle;
 }
 
-.visitor-card {
-  overflow: hidden;
-  padding: 1rem;
-  border: 1px solid rgba(79, 192, 141, 0.24);
-  background:
-    linear-gradient(135deg, rgba(79, 192, 141, 0.14), rgba(58, 154, 236, 0.1)),
-    white;
-  box-shadow: 0 8px 24px rgba(38, 111, 163, 0.08);
-}
-
-.visitor-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #4fc08d, #3a9aec);
-}
-
-.visitor-card-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.55rem;
-  color: #245b73;
-  font-size: 0.95rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.visitor-live-dot {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 50%;
-  background: #4fc08d;
-  box-shadow: 0 0 0 0 rgba(79, 192, 141, 0.45);
-  animation: visitor-pulse 2s infinite;
-}
-
-.visitor-badge {
+.visitor-count {
   display: flex;
   justify-content: center;
-  margin-top: 0.8rem;
+  padding: 0.1rem 0 0.35rem;
+  opacity: 0.68;
+  transition: opacity 0.2s ease;
 }
 
-.sidebar-card img.visitor-badge-image {
+.visitor-count:hover {
+  opacity: 1;
+}
+
+.sidebar img.visitor-count-image {
   width: auto;
-  height: 28px;
+  height: 18px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 3px;
   object-fit: contain;
-  filter: drop-shadow(0 4px 8px rgba(36, 91, 115, 0.14));
-  transition: transform 0.2s ease;
-}
-
-.sidebar-card img.visitor-badge-image:hover {
-  transform: translateY(-2px);
-}
-
-.visitor-caption {
-  margin: 0.65rem 0 0;
-  color: #6b7c85;
-  font-size: 0.82rem;
-}
-
-@keyframes visitor-pulse {
-  70% {
-    box-shadow: 0 0 0 7px rgba(79, 192, 141, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(79, 192, 141, 0);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .visitor-live-dot {
-    animation: none;
-  }
+  transition: none;
 }
 
 /* Responsive Design */
