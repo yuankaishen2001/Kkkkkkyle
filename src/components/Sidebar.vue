@@ -71,13 +71,6 @@ const News = [
           <FontAwesomeIcon :icon="link.icon" />
         </a>
       </div>
-      <div class="visitor-count">
-        <img
-          src="https://komarev.com/ghpvc/?username=yuankaishen2001-Kkkkkkyle&label=Visitors&color=4fc08d&style=flat"
-          alt="Visitor count"
-          referrerpolicy="no-referrer"
-        >
-      </div>
     </div>
 
     <!-- News -->
@@ -94,6 +87,23 @@ const News = [
         <div style="font-size: 1rem; color: #4fc08d; font-weight: 600; margin-bottom: 0.25rem;">{{ item.date }}</div>
         <div style="font-size: 1.1rem; line-height: 1.4;">{{ item.content }}</div>
       </div>
+    </div>
+
+    <!-- Visitor Count -->
+    <div class="sidebar-card visitor-card">
+      <div class="visitor-card-header">
+        <span class="visitor-live-dot" aria-hidden="true"></span>
+        <span>Website Visitors</span>
+      </div>
+      <div class="visitor-badge">
+        <img
+          class="visitor-badge-image"
+          src="https://komarev.com/ghpvc/?username=yuankaishen2001-Kkkkkkyle&label=VISITORS&color=4fc08d&style=for-the-badge"
+          alt="Website visitor count"
+          referrerpolicy="no-referrer"
+        >
+      </div>
+      <p class="visitor-caption">Thanks for stopping by ✨</p>
     </div>
   </div>
 </template>
@@ -168,21 +178,6 @@ const News = [
   gap: 0.75rem;
 }
 
-.visitor-count {
-  display: flex;
-  justify-content: center;
-  margin-top: 0.75rem;
-}
-
-.visitor-count img {
-  width: auto;
-  height: 20px;
-  border: 0;
-  border-radius: 0;
-  object-fit: contain;
-  transition: none;
-}
-
 .tooltip-wrapper {
   display: inline-flex;
   align-items: center;
@@ -243,6 +238,88 @@ const News = [
   width: 1em;
   height: 1em;
   vertical-align: middle;
+}
+
+.visitor-card {
+  overflow: hidden;
+  padding: 1rem;
+  border: 1px solid rgba(79, 192, 141, 0.24);
+  background:
+    linear-gradient(135deg, rgba(79, 192, 141, 0.14), rgba(58, 154, 236, 0.1)),
+    white;
+  box-shadow: 0 8px 24px rgba(38, 111, 163, 0.08);
+}
+
+.visitor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #4fc08d, #3a9aec);
+}
+
+.visitor-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  color: #245b73;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.visitor-live-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: #4fc08d;
+  box-shadow: 0 0 0 0 rgba(79, 192, 141, 0.45);
+  animation: visitor-pulse 2s infinite;
+}
+
+.visitor-badge {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.sidebar-card img.visitor-badge-image {
+  width: auto;
+  height: 28px;
+  border: 0;
+  border-radius: 6px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(36, 91, 115, 0.14));
+  transition: transform 0.2s ease;
+}
+
+.sidebar-card img.visitor-badge-image:hover {
+  transform: translateY(-2px);
+}
+
+.visitor-caption {
+  margin: 0.65rem 0 0;
+  color: #6b7c85;
+  font-size: 0.82rem;
+}
+
+@keyframes visitor-pulse {
+  70% {
+    box-shadow: 0 0 0 7px rgba(79, 192, 141, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(79, 192, 141, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visitor-live-dot {
+    animation: none;
+  }
 }
 
 /* Responsive Design */
