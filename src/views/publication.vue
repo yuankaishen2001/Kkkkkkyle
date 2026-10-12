@@ -21,6 +21,7 @@ import GPTasPsychologist from '@/assets/publication/GPTasPsychologist.png'
 import MGFER from '@/assets/publication/MGFER.png'
 import AULLMplus from '@/assets/publication/AULLM++.png'
 import DeltaVLA from '@/assets/publication/DeltaVLA.png'
+import DivingR1 from '@/assets/publication/DivingR1.png'
 
 
 // Add reactive reference and computed property
@@ -59,6 +60,17 @@ const filtered_publication = computed(() => {
 });
 
 const publication = [
+  {
+    title: "Diving-R1: Empowering Multimodal LLMs with Traceable Progressive Reasoning for Interpretable Diving Action Quality Assessment",
+    author: "<strong>Kaishen Yuan</strong>, Yuting Zhang, Bohao Xing, Wenshuo Chen, Yang Yang, Shaofeng Liang, Zitong Yu, Yutao Yue",
+    venue: "NeurIPS 2026",
+    img: DivingR1,
+    buttons: [
+      {button: "Paper", logo: faFileAlt, link: "https://yuankaishen2001.github.io/Kkkkkkyle/"},
+      {button: "GitHub", logo: faGithub, link: "https://yuankaishen2001.github.io/Kkkkkkyle/"}
+    ],
+    selected: true
+  },
   {
     title: "ΔVLA: Prior-Guided Vision-Language-Action Models via World Knowledge Variation",
     author: "Yijie Zhu, Jie He, Rui Shao, <strong>Kaishen Yuan</strong>, Tao Tan, Xiaochen Yuan, Zitong Yu",

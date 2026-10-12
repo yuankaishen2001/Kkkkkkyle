@@ -40,12 +40,13 @@ const education = [
       </div>
       <p style="line-height: 1.5;">
         Welcome to my academic homepage! 👏
-        My name is Kaishen Yuan (苑凯深). I am currently a first-year PhD student at the Hong Kong University of Science and Technology (Guangzhou), supervised by <a href="https://yutaoyue.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yutao Yue</a>. 
-        Prior to this, I obtained my Bachelor's and Master's degrees from Tianjin University in 2022 and 2025, respectively, with my Master's supervised by <a href="https://psychology.sjtu.edu.cn/tsml/524.html" target="_blank" rel="noopener noreferrer">Prof. Xin Liu</a>. 
+        My name is Kaishen Yuan (苑凯深). I am currently a <del>first</del> second-year PhD student at the Hong Kong University of Science and Technology (Guangzhou), supervised by <a href="https://yutaoyue.github.io/" target="_blank" rel="noopener noreferrer">Prof. Yutao Yue</a>. 
+        Prior to this, I obtained my Bachelor's and Master's degrees from Tianjin University in 2022 and 2025, respectively, with my Master's supervised by <a href="https://linuxsino.github.io/" target="_blank" rel="noopener noreferrer">Prof. Xin Liu</a>. 
         I also collaborate closely with <a href="https://zitong-yu.github.io/yzt/" target="_blank" rel="noopener noreferrer">Prof. Zitong Yu</a> and <a href="https://keke-nice.github.io/" target="_blank" rel="noopener noreferrer">Yuting Zhang</a>.
       </p>
       <p style="line-height: 1.5;">
-        My research interests primarily lie in <em>Affective Computing</em>, <em>Facial Analysis</em>, <em>Generative AI</em>.
+        <!-- My research interests primarily lie in <em>Affective Computing</em>, <em>Facial Analysis</em>, <em>Generative AI</em>. -->
+        My research interests primarily lie in <em>Affective Computing</em>, <em>Multimodal Reasoning</em>, and <em>Agentic Intelligence</em>.
       </p>
       <p style="line-height: 1.5;">
         If you see potential for collaboration, please don't hesitate to reach out.
@@ -84,11 +85,11 @@ const education = [
       <ul style="list-style-type: none; padding-left: 0;">
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
-          <span>&nbsp;&nbsp;Conferences: AAAI 27, NeurIPS 26, ACM MM 26, ECCV 26, ICML 26, ICLR 26, AAAI 26, NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
+          <span>&nbsp;&nbsp;Conferences: ICLR 27, AAAI 27, NeurIPS 26, ACM MM 26, ECCV 26, ICML 26, ICLR 26, AAAI 26, NeurIPS 25, ICLR 25, ACM MM 25, ICME 25, IJCB 24</span>
         </li>
         <li>
           <FontAwesomeIcon :icon="faSquare" style="color: #4fc08d; font-size: 0.6rem;"/> 
-          <span>&nbsp;&nbsp;Journals: IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), Pattern Recognition (PR), The Visual Computer (TVC)</span>
+          <span>&nbsp;&nbsp;Journals: IEEE Transactions on Affective Computing (IEEE TAFFC), IEEE Transactions on Cybernetics (IEEE TCYB), IEEE Transactions on Knowledge and Data Engineering (IEEE TKDE), Pattern Recognition (PR), The Visual Computer (TVC)</span>
         </li>
       </ul>
     </section>

@@ -20,6 +20,10 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2026.09',
+    content: 'One paper on Diving AQA is accepted by NeurIPS 2026. 🤸‍♂️',
+  },
+  {
     date: '2026.03',
     content: 'One paper on Multi-granularity Emotional Representation is accepted by IEEE TIP. 🎊',
   },
