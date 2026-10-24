@@ -20,8 +20,12 @@ const SocialMedia = [
 
 const News = [
   {
+    date: '2026.10',
+    content: 'Selected for the CAST Young Scientific Talent Development Program for PhD Students. 🖖',
+  },
+  {
     date: '2026.09',
-    content: 'One paper on Diving AQA is accepted by NeurIPS 2026. 🤸‍♂️',
+    content: 'One paper on Interpretable Diving AQA is accepted by NeurIPS 2026. 🤸‍♂️',
   },
   {
     date: '2026.03',
