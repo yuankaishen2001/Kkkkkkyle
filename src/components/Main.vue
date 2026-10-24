@@ -106,8 +106,7 @@ const education = [
         <li>
           <FontAwesomeIcon :icon="faCircle" style="color: #4fc08d; font-size: 0.6rem;"/>
           <span>
-            &nbsp;&nbsp;CAST Young Scientific Talent Development Program for PhD Students
-            <em>（中国科协青年科技人才培育工程博士生专项计划）</em>
+            &nbsp;&nbsp;CAST Young Scientific Talent Development Program for PhD Students (中国科协青年科技人才培育工程博士生专项计划)
           </span>
         </li>
         <li>
